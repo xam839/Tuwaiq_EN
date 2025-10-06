@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة طاقة طويق - حلول الطاقة الشمسية المتكاملة</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="solar-loader">
+            <div class="sun"></div>
+            <div class="orbit"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-solar-panel"></i>
+                <span>طاقة طويق</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">من نحن</a></li>
+                <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                <li><a href="#portfolio" class="nav-link">أعمالنا</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+            </ul>
+            
+            <div class="nav-cta">
+                <a href="#contact" class="btn-primary">استشارة مجانية</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="solar-panels-bg"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">مؤسسة</span>
+                    <span class="word">طاقة</span>
+                    <span class="word">طويق</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="highlight">حلول متكاملة</span> للطاقة الشمسية
+                </div>
+                <p class="hero-description">
+                    من التصميم حتى التشغيل في جميع مناطق المملكة
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-glow">
+                        <span>اطلب استشارة مجانية</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#services" class="btn-glass">
+                        <span>اكتشف خدماتنا</span>
+                        <i class="fas fa-solar-panel"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-inner">
+                        <i class="fas fa-sun"></i>
+                        <h3>طاقة نظيفة</h3>
+                        <p>حلول صديقة للبيئة</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-1">
+                    <div class="card-inner">
+                        <i class="fas fa-leaf"></i>
+                        <h3>استدامة</h3>
+                        <p>مستقبل أخضر</p>
+                    </div>
+                </div>
+                <div class="floating-card delay-2">
+                    <div class="card-inner">
+                        <i class="fas fa-bolt"></i>
+                        <h3>كفاءة عالية</h3>
+                        <p>أحدث التقنيات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>اسحب للأسفل</span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">مشروع منجز</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-unit">MW</div>
+                    <div class="stat-label">طاقة مولدة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">عميل سعيد</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">سنوات خبرة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">من نحن</span>
+                <h2 class="section-title">
+                    <span class="gradient-text">رواد الطاقة الشمسية</span>
+                    في المملكة
+                </h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        نحن في مؤسسة طاقة طويق نسعى لتوفير حلول طاقة شمسية متكاملة وموثوقة، 
+                        بخبرة تمتد لأكثر من 15 عامًا في السوق السعودي.
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>خبرة طويلة</h3>
+                                <p>أكثر من 15 عامًا في مجال الطاقة الشمسية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>تغطية شاملة</h3>
+                                <p>نغطي جميع مناطق المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>فريق متخصص</h3>
+                                <p>مهندسون وفنيون معتمدون دوليًا</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>خدمات متكاملة</h3>
+                                <p>من التصميم والتركيب حتى الصيانة والاستشارات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="image-stack">
+                        <div class="image-card main-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-solar-panel"></i>
+                                <p>مشاريعنا الضخمة</p>
+                            </div>
+                        </div>
+                        <div class="image-card sub-image-1">
+                            <div class="image-placeholder">
+                                <i class="fas fa-hard-hat"></i>
+                                <p>فريق العمل</p>
+                            </div>
+                        </div>
+                        <div class="image-card sub-image-2">
+                            <div class="image-placeholder">
+                                <i class="fas fa-certificate"></i>
+                                <p>شهادات الجودة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">خدماتنا</span>
+                <h2 class="section-title">
+                    حلول <span class="gradient-text">شاملة ومتكاملة</span>
+                </h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>تركيب الأنظمة</h3>
+                    <p>تركيب أنظمة الطاقة الشمسية بأحدث التقنيات والمعايير العالمية</p>
+                    <div class="service-features">
+                        <span>منازل</span>
+                        <span>شركات</span>
+                        <span>مزارع</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>صيانة وتشغيل</h3>
+                    <p>صيانة دورية وتشغيل احترافي لضمان أعلى كفاءة للنظام</p>
+                    <div class="service-features">
+                        <span>صيانة وقائية</span>
+                        <span>إصلاحات</span>
+                        <span>مراقبة</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>تصميم وتخطيط</h3>
+                    <p>تصميم مخصص لكل مشروع حسب الاحتياجات والمساحة المتاحة</p>
+                    <div class="service-features">
+                        <span>دراسة جدوى</span>
+                        <span>تصميم 3D</span>
+                        <span>حسابات دقيقة</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>تعديلات وتوسعات</h3>
+                    <p>ترقية الأنظمة القائمة وإضافة سعات إضافية حسب الحاجة</p>
+                    <div class="service-features">
+                        <span>زيادة السعة</span>
+                        <span>تحديث المعدات</span>
+                        <span>تحسين الأداء</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>استشارات متخصصة</h3>
+                    <p>استشارات فنية وهندسية من خبراء معتمدين في الطاقة المتجددة</p>
+                    <div class="service-features">
+                        <span>تقييم المواقع</span>
+                        <span>حلول مخصصة</span>
+                        <span>دعم فني</span>
+                    </div>
+                </div>
+                
+                <div class="service-card special">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>مراقبة الأداء</h3>
+                    <p>نظام مراقبة ذكي على مدار الساعة لضمان أفضل أداء</p>
+                    <div class="service-features">
+                        <span>تقارير دورية</span>
+                        <span>تنبيهات فورية</span>
+                        <span>تحليل البيانات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">مشاريعنا</span>
+                <h2 class="section-title">
+                    إنجازات <span class="gradient-text">نفخر بها</span>
+                </h2>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="residential">سكني</button>
+                <button class="filter-btn" data-filter="commercial">تجاري</button>
+                <button class="filter-btn" data-filter="agricultural">زراعي</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>فيلا سكنية - الرياض</h3>
+                            <p>السعة: 20 كيلوواط</p>
+                            <p>المدة: 5 أيام</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>مجمع تجاري - جدة</h3>
+                            <p>السعة: 500 كيلوواط</p>
+                            <p>المدة: 30 يوم</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="agricultural">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>مزرعة - القصيم</h3>
+                            <p>السعة: 1 ميجاواط</p>
+                            <p>المدة: 45 يوم</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>مصنع - الدمام</h3>
+                            <p>السعة: 2 ميجاواط</p>
+                            <p>المدة: 60 يوم</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>مجمع سكني - المدينة</h3>
+                            <p>السعة: 300 كيلوواط</p>
+                            <p>المدة: 25 يوم</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="agricultural">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>بيوت زراعية - حائل</h3>
+                            <p>السعة: 150 كيلوواط</p>
+                            <p>المدة: 20 يوم</p>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Our Work Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">أعمالنا</span>
+                <h2 class="section-title">
+                    صور من <span class="gradient-text">مشاريعنا الفعلية</span>
+                </h2>
+                <p class="section-description">
+                    نفخر بتقديم نماذج من أعمالنا المنجزة في مختلف أنحاء المملكة
+                </p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- صورة 1 -->
+                <div class="portfolio-item" data-category="installation">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (1).jpeg" alt="تركيب نظام شمسي على سطح منزل" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>تركيب نظام شمسي سكني</h3>
+                                <p>نظام 20 كيلوواط - الرياض</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 2 -->
+                <div class="portfolio-item" data-category="panels">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (2).jpeg" alt="ألواح شمسية على سطح تجاري" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>ألواح شمسية عالية الكفاءة</h3>
+                                <p>مشروع تجاري - جدة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 3 -->
+                <div class="portfolio-item" data-category="inverters">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (3).jpeg" alt="محولات الطاقة" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>محولات طاقة حديثة</h3>
+                                <p>كفاءة تحويل 98%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 4 -->
+                <div class="portfolio-item" data-category="monitoring">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (4).jpeg" alt="نظام مراقبة" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>نظام مراقبة ذكي</h3>
+                                <p>مراقبة على مدار الساعة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 5 -->
+                <div class="portfolio-item" data-category="installation">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (5).jpeg" alt="مشروع مزرعة" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>مشروع مزرعة شمسية</h3>
+                                <p>1 ميجاواط - القصيم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 6 -->
+                <div class="portfolio-item" data-category="panels">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (6).jpeg" alt="صف ألواح شمسية" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>صفوف ألواح منتظمة</h3>
+                                <p>تصميم هندسي دقيق</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 7 -->
+                <div class="portfolio-item" data-category="installation">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (7).jpeg" alt="فريق العمل أثناء التركيب" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>فريق العمل المحترف</h3>
+                                <p>خبراء في التركيب</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- صورة 8 -->
+                <div class="portfolio-item" data-category="inverters">
+                    <div class="portfolio-image">
+                        <img src="photo/1 (8).jpeg" alt="غرفة المحولات" />
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>ضع صورتك هنا</p>
+                            <span>حجم مقترح: 600x400</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>غرفة التحكم والمحولات</h3>
+                                <p>تقنية متقدمة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">آراء العملاء</span>
+                <h2 class="section-title">
+                    ماذا يقول <span class="gradient-text">عملاؤنا</span>
+                </h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        خدمة ممتازة وفريق عمل محترف. تم تركيب النظام الشمسي في منزلي بكفاءة عالية
+                        وأصبحت فواتير الكهرباء شبه معدومة.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>محمد السعيد</h4>
+                            <p>صاحب فيلا سكنية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        استثمار ناجح بكل المقاييس. النظام الشمسي الذي قامت المؤسسة بتركيبه
+                        في مزرعتي وفر علي الكثير وزاد من الإنتاجية.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>خالد العتيبي</h4>
+                            <p>صاحب مزرعة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        أفضل قرار اتخذته لشركتي. الطاقة الشمسية خفضت التكاليف التشغيلية
+                        بشكل كبير والصيانة الدورية ممتازة.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>عبدالله الشمري</h4>
+                            <p>مدير مصنع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">تواصل معنا</span>
+                <h2 class="section-title">
+                    ابدأ رحلتك نحو <span class="gradient-text">الطاقة النظيفة</span>
+                </h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">الاسم الكامل</label>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">رقم الجوال</label>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">البريد الإلكتروني</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">اختر الخدمة</option>
+                                <option value="installation">تركيب نظام جديد</option>
+                                <option value="maintenance">صيانة وإصلاح</option>
+                                <option value="consultation">استشارة فنية</option>
+                                <option value="expansion">توسعة نظام قائم</option>
+                            </select>
+                            <label for="service">نوع الخدمة</label>
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">رسالتك</label>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span>إرسال الرسالة</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>الموقع</h3>
+                            <p>المملكة العربية السعودية</p>
+                            <p>نغطي جميع المناطق</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>اتصل بنا</h3>
+                            <p dir="ltr">+966 55 244 2119</p>
+                            <p dir="ltr">+966 55 244 2119</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card whatsapp-card">
+                        <a href="https://wa.me/966552442119" target="_blank" class="whatsapp-link">
+                            <div class="info-icon whatsapp-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>واتساب</h3>
+                                <p>تواصل معنا مباشرة</p>
+                                <p dir="ltr" class="whatsapp-number">+966 55 244 2119</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>m2030a2019@gmail.com</p>
+                            <p>m2030a2019@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>ساعات العمل</h3>
+                            <p>السبت - الخميس: 8:00 ص - 6:00 م</p>
+                            <p>الجمعة: عطلة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-solar-panel"></i>
+                        <span>طاقة طويق</span>
+                    </div>
+                    <p>نحو مستقبل مستدام بالطاقة النظيفة</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#projects">المشاريع</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#">تركيب الأنظمة</a></li>
+                        <li><a href="#">صيانة وتشغيل</a></li>
+                        <li><a href="#">تصميم المشاريع</a></li>
+                        <li><a href="#">استشارات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>معلومات</h3>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">وظائف</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© <span id="year">2024</span> مؤسسة طاقة طويق. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
