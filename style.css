@@ -225,6 +225,20 @@ body {
     font-size: 1.75rem;
 }
 
+.logo-image {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: transform var(--transition-base);
+    background: transparent;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+.navbar.scrolled .logo-image {
+    height: 60px;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;

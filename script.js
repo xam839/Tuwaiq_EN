@@ -170,7 +170,7 @@ dots.forEach((dot, index) => {
 });
 
 // ===================================
-// Form Handling
+// Form Handling with Email Sending
 // ===================================
 const contactForm = document.getElementById('contactForm');
 
@@ -187,14 +187,77 @@ if (contactForm) {
             message: document.getElementById('message').value
         };
         
-        // Here you would normally send the data to a server
-        console.log('Form submitted:', formData);
+        // Get service name in Arabic
+        const serviceNames = {
+            'maintenance': 'صيانة',
+            'permanent-installation': 'تركيب دائم',
+            'mobile-power': 'توفير طاقة متنقلة'
+        };
         
-        // Show success message
-        alert('شكراً لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.');
+        const serviceName = serviceNames[formData.service] || formData.service;
         
-        // Reset form
-        contactForm.reset();
+        // Create email body
+        const emailBody = `
+معلومات العميل:
+
+الاسم: ${formData.name}
+رقم الجوال: ${formData.phone}
+البريد الإلكتروني: ${formData.email}
+نوع الخدمة: ${serviceName}
+
+الرسالة:
+${formData.message}
+
+تم إرسال هذه الرسالة من موقع طاقة طويق
+        `.trim();
+        
+        // Create mailto link
+        const mailtoLink = `mailto:m2030a2019@gmail.com?subject=طلب خدمة: ${serviceName}&body=${encodeURIComponent(emailBody)}`;
+        
+        // Alternative: Send to FormSubmit.co (free form backend service)
+        const formSubmitData = new FormData();
+        formSubmitData.append('name', formData.name);
+        formSubmitData.append('phone', formData.phone);
+        formSubmitData.append('email', formData.email);
+        formSubmitData.append('service', serviceName);
+        formSubmitData.append('message', formData.message);
+        formSubmitData.append('_subject', `طلب خدمة جديد: ${serviceName}`);
+        formSubmitData.append('_template', 'table');
+        
+        // Show loading state
+        const submitButton = contactForm.querySelector('.btn-submit');
+        const originalButtonText = submitButton.innerHTML;
+        submitButton.innerHTML = '<span>جاري الإرسال...</span><i class="fas fa-spinner fa-spin"></i>';
+        submitButton.disabled = true;
+        
+        // Try to send using FormSubmit.co (free service)
+        fetch('https://formsubmit.co/m2030a2019@gmail.com', {
+            method: 'POST',
+            body: formSubmitData
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show success message
+                alert('شكراً لتواصلك معنا! سنقوم بالرد عليك في أقرب وقت ممكن.\n\nتم إرسال رسالتك بنجاح إلى: m2030a2019@gmail.com');
+                
+                // Reset form
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(error => {
+            console.error('Error sending form:', error);
+            
+            // Fallback to mailto if fetch fails
+            alert('سيتم فتح برنامج البريد الإلكتروني الخاص بك لإرسال الرسالة...');
+            window.location.href = mailtoLink;
+        })
+        .finally(() => {
+            // Restore button state
+            submitButton.innerHTML = originalButtonText;
+            submitButton.disabled = false;
+        });
     });
 }
 
